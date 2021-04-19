@@ -1,7 +1,7 @@
 class Form {
 
   constructor() {
-    this.input = createInput("Name");
+ this.input = createInput("").attribute("placeholder", "Name");
     this.button = createButton('Play');
     this.greeting = createElement('h2');
     this.title = createElement('h2');
@@ -19,7 +19,7 @@ class Form {
 
     this.input.position(displayWidth/2 - 40 , displayHeight/2 - 80);
     this.button.position(displayWidth/2 + 30, displayHeight/2);
-
+2
     this.button.mousePressed(()=>{
       this.input.hide();
       this.button.hide();
